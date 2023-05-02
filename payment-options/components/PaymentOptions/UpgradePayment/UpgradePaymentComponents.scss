@@ -1,0 +1,27 @@
+.payment-upgrade {
+  text-align: center;
+  padding: 40px;
+  h2 {
+    color: var(--zid-colors-primary-500);
+    font-size: var(--zid-font-size--xl);
+  }
+  &__logos {
+    display: flex;
+    justify-content: center;
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      width: 50%;
+      justify-content: center;
+      opacity: 0.8;
+      > div {
+        margin: 0 5px 16px;
+      }
+    }
+  }
+  &__link {
+    img {
+      margin-inline-end: 16px;
+    }
+  }
+}

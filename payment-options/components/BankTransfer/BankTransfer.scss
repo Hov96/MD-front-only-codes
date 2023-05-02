@@ -1,0 +1,65 @@
+@import '../../../common/styles/mixins/responsiveness';
+
+.bank-transfer {
+  padding: 25px 20px 0px;
+
+  @include media-breakpoint-down(md) {
+    padding: 25px 0px 0px;
+  }
+
+  &__card-header {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__title {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__account {
+    margin-top: 45px;
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h4 {
+        margin-bottom: 0px;
+      }
+    }
+
+    &__details {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 8px;
+
+      &__img-hodler {
+        display: inline-block;
+        background-color: var(--zid-colors-neutrals-white);
+        padding: 5px;
+        border-radius: 5px;
+
+        img {
+          display: inline-block;
+          vertical-align: middle;
+          width: 70px;
+        }
+      }
+
+      &__info {
+        margin-inline-start: 10px;
+
+        p {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}

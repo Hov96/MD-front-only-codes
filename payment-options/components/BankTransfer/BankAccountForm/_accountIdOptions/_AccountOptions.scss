@@ -1,0 +1,19 @@
+.bank-items {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+  &__option {
+    background: var(--zid-colors-primary-100);
+    border-radius: 5px;
+    margin: 0 0.4rem 0.2rem;
+    padding: 0.2rem 0.7rem;
+    color: var(--zid-colors-primary-500);
+    text-transform: capitalize;
+    cursor: pointer;
+    &--active {
+      background-color: var(--zid-colors-primary-500);
+      color: white;
+    }
+  }
+}

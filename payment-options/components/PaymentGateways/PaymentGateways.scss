@@ -1,0 +1,39 @@
+@import '../../../common/styles/mixins/responsiveness';
+.payment-gateways {
+  padding: 25px 20px 0px;
+
+  @include media-breakpoint-down(md) {
+    padding: 25px 0px 0px;
+  }
+
+  &__header {
+    &__description {
+      color: var(--zid-colors-neutrals-700);
+    }
+  }
+
+  &__gateway {
+    margin-bottom: 15px;
+  }
+}
+.wrapper {
+  position: relative;
+  &__overlay {
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    background: rgba(255, 255, 255, 0.27);
+    backdrop-filter: blur(6px);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    &__content {
+      &__target {
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import '../../../common/styles/mixins/responsiveness';
+
+.payment-options {
+  padding: 15px 15px;
+
+  &__zidpay {
+    @include media-breakpoint-down(md) {
+      padding-inline: 0px !important;
+    }
+  }
+
+  &__confirm-email {
+    padding-inline: 15px;
+    padding-top: 10px;
+  }
+}

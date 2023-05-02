@@ -1,0 +1,71 @@
+.payment-gateway {
+  border: 2px solid var(--zid-colors-neutrals-300) !important;
+  border-radius: 12px !important;
+  height: 100%;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__header {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: auto;
+      max-width: 120px;
+    }
+
+    &__title {
+      color: var(--zid-colors-green-500);
+      margin-bottom: 0px;
+      line-height: 25px;
+    }
+
+    &__small-img {
+      max-width: 70px !important;
+    }
+  }
+
+  &__body {
+    &__badge {
+      --zid-badge-border-radius: 4px;
+      margin: 10px 0px;
+    }
+
+    &__methods {
+      color: var(--zid-colors-neutrals-950);
+      max-width: 280px;
+
+      &__title {
+        margin-inline-end: 5px;
+        display: inline;
+      }
+    }
+
+    &__method {
+      padding-inline-end: 2px;
+    }
+
+    &__website {
+      margin-top: 10px;
+
+      h5 {
+        display: inline;
+        padding-inline-end: 5px;
+      }
+
+      a {
+        color: var(--zid-colors-green-500);
+        font-weight: 700;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__activation-way__button {
+    white-space: nowrap;
+    font-size: var(--zid-font-size--sm);
+  }
+}

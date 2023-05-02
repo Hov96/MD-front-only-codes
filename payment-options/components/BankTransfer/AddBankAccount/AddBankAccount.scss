@@ -1,0 +1,22 @@
+.add-bank {
+  &__modal {
+    --zid-modal-padding: 0px;
+
+    &__header {
+      padding: 15px 30px !important;
+    }
+
+    &__body {
+      padding: 15px 30px !important;
+    }
+  }
+
+  &__add {
+    font-size: var(--zid-font-size--sm) !important;
+    --zid-button-font-weight: 600;
+  }
+
+  &__title {
+    margin: 0px;
+  }
+}

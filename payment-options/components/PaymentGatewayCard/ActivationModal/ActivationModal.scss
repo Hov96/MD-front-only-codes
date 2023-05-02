@@ -1,0 +1,135 @@
+@import '../../../../common/styles/mixins/responsiveness';
+
+.activation-modal {
+  --zid-modal-max-height: 75vh;
+  --zid-modal-padding: 0px;
+
+  &__header {
+    padding: 15px 30px !important;
+
+    &__box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__title {
+        margin: 0px;
+
+        span {
+          margin-inline: 3px;
+        }
+      }
+
+      label {
+        margin-inline-start: 25px !important;
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  &__body {
+    --zid-box-padding: 15px 30px;
+  }
+
+  &__step {
+    margin-bottom: 12px;
+
+    &__title {
+      margin-bottom: 8px;
+
+      span {
+        margin-inline-end: 3px;
+      }
+
+      p {
+        display: inline-block;
+        padding-inline-start: 2px;
+      }
+    }
+
+    &__checkbox {
+      font-size: var(--zid-text-font-size, 14px) !important;
+      line-height: var(--zid-text-line-height, 1.5em) !important;
+      font-weight: var(--zid-text-font-weight, 400) !important;
+      margin-top: 12px;
+    }
+
+    &__help-center {
+      margin-inline-start: 5px;
+
+      a {
+        color: var(--zid-colors-primary-500);
+      }
+    }
+  }
+
+  &__form-group {
+    margin-top: 12px !important;
+    padding-inline-start: 15px;
+
+    &__input {
+      margin-top: 8px;
+    }
+  }
+
+  &__img-holder {
+    align-items: center;
+    position: relative;
+    width: 100px !important;
+    margin: 0;
+    margin-left: 8px;
+    min-height: 100px;
+    display: flex;
+  }
+
+  &__img-box {
+    position: absolute;
+    border: 1px solid var(--zid-colors-neutrals-200);
+    border-radius: 4px;
+
+    &--selected {
+      border-color: var(--zid-color-success);
+      box-shadow: 0px 4px 8px var(--zid-colors-neutrals-white);
+    }
+  }
+
+  &__img {
+    margin: 3px;
+    width: 90px;
+    height: 80px;
+    padding: 5px;
+    filter: grayscale(1);
+
+    &--selected {
+      filter: none;
+    }
+  }
+
+  &__required-field {
+    display: block;
+    color: var(--zid-colors-red-500);
+    font-size: var(--zid-font-size--sm);
+    line-height: 1.4em;
+    margin-inline-start: 4px;
+    margin-top: 7px;
+  }
+
+  &__select {
+    margin-top: 8px;
+    &__header button {
+      --zid-select-header-min-width: 100%;
+      justify-content: start !important;
+      --zid-button-padding: 12px;
+    }
+
+    &__body {
+      z-index: 55;
+    }
+  }
+
+  footer {
+    margin-top: 35px;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
